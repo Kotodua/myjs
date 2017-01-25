@@ -1,0 +1,4 @@
+https://learn.javascript.ru/destructuring - ES6
+Top interview questions
+OOP in js
+inharitance in js
