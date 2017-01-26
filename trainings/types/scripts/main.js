@@ -11,6 +11,7 @@
 	console.log("typeof [] is: " + typeof []);
 	console.log("typeof {} is: " + typeof {});
 	console.log(typeof undefined === "undefined");
+	console.log("typeof function is: " + typeof function(){});
 
 
 })()
