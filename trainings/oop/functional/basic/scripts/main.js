@@ -2,7 +2,9 @@
 'use strict'
 
 function Counter(){
-	this.currentCount = 1;
+	var currentCount = 1;
+
+	//return this.counter();
 }
 
 
@@ -16,18 +18,24 @@ Counter.prototype = {
 	},
 	increase: function(){
 		this.cuttentCount += 1;
-	}
+	},
+	counter: function (){
+		console.log("hi there");
+	} 
 }
 
-var counter = new Counter();
+function Clock(){
+	name = 'clock';
+	Counter.call(this);
+}
 
-console.log(counter)
-counter.getCount();
-counter.setCount(10);
-counter.getCount();
+Clock.prototype = Object.create(Counter.prototype);
+Clock.prototype.constructor = Clock;
 
-var counter2 = new Counter();
+var clock = new Clock();
 
-counter2.getCount();
+clock.counter();
+
+console.log(clock);
 
 })()

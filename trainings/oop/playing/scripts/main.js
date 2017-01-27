@@ -1,20 +1,12 @@
 (function main(){
 	"use strict"
 
-	function Shape(){
-		this.title = "shape";
-		var _local = "local value"
+function sum(a){
+	return function other(b){
+		return a + b;
 	}
+}
 
-	Shape.prototype.getLocal = function(){
-		console.log(_local);
-	}
-
-
-	var circle = new Shape();
-
-	console.log(circle.title)
-	console.log(circle._local)
-	circle.getLocal();
+console.log(sum(1)(2))
 
 })()
