@@ -3,3 +3,8 @@ Top interview questions
 OOP in js
 inharitance in js
 apply and call
+
+
+
+----------------
+https://learn.javascript.ru/closures-usage
