@@ -1,56 +1,22 @@
 (function main(){
 	"use strict"
 
-	var string = prompt('Input string:');
-	 
-	var arr = string.split('');
 
-	var res = [];
-	arr.sort();
-
-	console.log(arr);
-
-	for (var i = 0; i < arr.length; i++){
-		var j = 0;
-		while (arr[i] == arr[i+1]){
-			j++;
-			i++;
-		}
-
-		if (j == 1){
-			res.push(arr[i]);
-		}
-		
-	}
+function rec(){
+	console.log(new Date());
+	setTimeout(function(){
+		setTimeout(rec, 500);
+	}, 500);
 }
 
-console.log(sum(1)(2))
-=======
-	var string = prompt('Input string:');
-	 
-	var arr = string.split('');
-
-	var res = [];
-	arr.sort();
-
-	console.log(arr);
-
-	for (var i = 0; i < arr.length; i++){
-		var j = 0;
-		while (arr[i] == arr[i+1]){
-			j++;
-			i++;
-		}
-
-		if (j == 1){
-			res.push(arr[i]);
-		}
-		
-	}
+rec();
 
 
-console.log(res);
+(function tmo(){
+	setTimeout(function(){
+	console.log('one more timeout');
+}, 2000)	
+})()
 
->>>>>>> fa0b33a965028a287c2a71dc3d5eac76c98e8ee1
 
 })()
