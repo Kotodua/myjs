@@ -2,21 +2,25 @@
 	"use strict"
 
 
-function rec(){
-	console.log(new Date());
-	setTimeout(function(){
-		setTimeout(rec, 500);
-	}, 500);
+	//setTimeout(funct, 1000);
+
+
+var Some = function(){
+	this.name = 'vasya';
+
+
+	this.getName = function(){
+		console.log(this.name);
+	}
 }
 
-rec();
 
+function show(){
+	var s = new Some();
 
-(function tmo(){
-	setTimeout(function(){
-	console.log('one more timeout');
-}, 2000)	
-})()
+	s.getName();
+}
 
+setTimeout(show, 1000);
 
 })()
