@@ -8,3 +8,8 @@ apply and call
 
 ----------------
 https://learn.javascript.ru/closures-usage
+
+
+
+------ NODEJS
+GULP - http://www.creative-seo.ru/blog/gulp-dlya-nachinayushchih/
