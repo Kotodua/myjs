@@ -1,12 +1,16 @@
-https://learn.javascript.ru/destructuring - ES6
-Top interview questions
+
+------ Top interview questions
 OOP in js
+__proto__, prototype, new - https://habrahabr.ru/post/140810/
 inharitance in js
-apply and call
+apply, call, bind
 
 
+------ ES6
+Destructuring: https://learn.javascript.ru/destructuring 
 
-----------------
+
+------ Clocures
 https://learn.javascript.ru/closures-usage
 
 
