@@ -1,0 +1,37 @@
+requirements
+
+result:
+- zip archive with local html page:
+-- index.html (for start local html page).
+-- directory 'css' for css files.
+-- directory 'js' for js files.
+-- directory 'res' for resources.
+
+Common for html page:
+- resizable layout which uses only page size fitted to the screen size (no needed scroll bars, all modules are inside screen size).
+- horizontal resizer changes width of modules 'left container', 'right container' and 'right bottom container'.
+- vertical resizer changes height of modules 'right top container' and 'right buttom container'.
+- more limple code is better.
+- less 3rd party modules is better.
+
+Svg container:
+- has rectangle border and size and centered in the 'left container'.
+- size if auto filled by the width of the 'left container'.
+- consists one svg vector image with svg objects:
+-- rectangle which moves by circle trajectory continuously.
+-- circle which moves by triangle trajectory countinuously (z-order is under rectangle and triangle).
+-- triabgle which moves by rectangle trajectory conrinuiusly (z-order is under rectangle)
+
+Controls:
+- setup width and color of stroke for the 'svg container'.
+- setup fill color and opacity for the 'svg container.rectangle'.
+- setup stroke color, stroke width and stroke opacity for the 'svg container.triangle'.
+- setup size and anchor ponts shift for the 'svg container.circle'.
+
+History:
+- when any parameter is changed in the 'controls' new string info added to the 'history' (!! how should history look like, how to show history to the user?)
+
+Acceptance criteria:
+- all modules work with accordance with requirements.
+- no issued on the 'Google Chrome & Windows' platform.
+- html page is ready for the automated testing.

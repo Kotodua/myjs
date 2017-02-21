@@ -2,8 +2,9 @@
 
 	var Obj = function(name){
 		this.name = name;
-		this.canRun = true;
 	}
+
+	Obj.prototype.canRun = true;
 
 	Obj.prototype.run = function() {
 		if (this.canRun){
@@ -26,6 +27,17 @@ cat.run();
 
 var kt = new Table('Kitchen table');
 kt.run();
+
+var Dog = function(name){
+	this.name = name;
+};
+
+Dog.prototype = Object.create(Obj.prototype);
+Dog.prototype.constructor = Dog;
+
+var pet = new Dog("Charlik");
+pet.run();
+console.log(pet);
 
 
 
