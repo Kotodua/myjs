@@ -1,0 +1,48 @@
+.form {
+	width: 25%;
+    padding: 3rem;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    border-width: .2rem;
+}
+
+.select {
+    display: inline-block;
+    max-width: 100%;
+    padding: .375rem 1.75rem .375rem .75rem;
+    line-height: 1.25;
+    color: #464a4c;
+    vertical-align: middle;
+    -webkit-background-size: 8px 10px;
+    background-size: 8px 10px;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+#exTab1 .tab-content {
+  color : white;
+  background-color: #428bca;
+  padding : 5px 15px;
+}
+
+#exTab1 .nav-pills > li > a {
+  border-radius: 0;
+}
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    margin: auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
