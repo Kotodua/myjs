@@ -1,2 +1,4 @@
 /nodetest/node_modules/*
 /templates/node-selenium/node_modules/*
+/ttf-runner/node_modules/*
+/runner/node_modules/*

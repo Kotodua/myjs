@@ -1,0 +1,17 @@
+{
+  "name": "runner",
+  "version": "1.0.0",
+  "description": "ttf-test-runner",
+  "main": "runner.js",
+  "dependencies": {
+    "chai": "^3.5.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.4.1"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "author": "K. Allakhvierdov",
+  "license": "ISC"
+}
