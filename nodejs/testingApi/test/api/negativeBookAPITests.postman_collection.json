@@ -1,0 +1,119 @@
+{
+	"variables": [],
+	"info": {
+		"name": "negativeBookAPITests",
+		"_postman_id": "58ec42e2-eb59-16ab-5088-1fac1f939d10",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create book without pages",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var response = JSON.parse(responseBody);",
+							"tests[\"It is impossible to create book without pages\"] = response.errors.pages.path === 'pages'"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "127.0.0.1:3000/book",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Split",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "author",
+							"value": "Swait Avasthi",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "year",
+							"value": "2010",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create book without title",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var response = JSON.parse(responseBody);",
+							"tests[\"It is impossible to create book without title\"] = response.errors.title.path === 'title';"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "127.0.0.1:3000/book",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "author",
+							"value": "Swait Avasthi",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "year",
+							"value": "2010",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "pages",
+							"value": "100",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

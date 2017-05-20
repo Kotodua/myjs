@@ -1,0 +1,59 @@
+<!doctype html>  
+<html lang="en">  
+    <head>
+
+    </head>
+    <body>
+        <h1 id='title'>Ship Battle! Game will start soon...</h1>
+        <div id='message'></div>
+        <div id="future"></div>
+		<input type="text" id="turnEdit" />
+        <button id="ready"  onclick="connect();">Ready</button>
+        <button id="turn" value="Ready" onclick="turn();">turn</button>
+
+
+         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="/socket.io/socket.io.js"></script>  
+        <script> 
+
+        var socket = {};
+        function connect(){
+        	socket = io.connect('http://localhost:4200');
+		    socket.on('connect', function(data) {
+		        socket.emit('join', 'Hello World from client');
+		    });
+
+			socket.on('gamestarted', function(data) {
+				var text = 'Ship battle. Game Started. '+data[2];
+				document.getElementById('title').innerHTML = text;
+	        	console.log(data[0]);
+	        	console.log(data[1]);
+	    	});
+
+			socket.on('+', function(data) {
+	        	console.log('+ ' + data);
+	    	});
+
+	    	socket.on('-', function(data) {
+	        	console.log('- ' + data);
+	    	});
+
+	    	socket.on('you won', function(data) {
+	        	console.log("you won");
+	    	});
+
+    	 	socket.on('you loose', function(data) {
+	        	console.log("you loose");
+	    	});
+		} 
+
+    	var turn = function(){
+			console.log('turning...');
+			console.log(socket);
+			socket.emit('turn', document.getElementById('turnEdit').value);
+		}
+      
+
+</script>         
+    </body>
+</html>  

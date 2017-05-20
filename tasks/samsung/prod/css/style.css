@@ -1,0 +1,39 @@
+.main {
+	background-color: #00ff00;
+}
+
+.container-left {
+	width: 49%;
+	background-color: #00ffff;	
+}
+
+.container-right{
+	width: 49%;
+	background-color: #00ff11;
+
+}
+
+.container-right.top{
+	height: 49%;
+	background-color: #00ffaa;
+}
+
+.container-right.bottom{
+	height: 49%;
+	background-color: #00ffbb;
+}
+
+.history{
+	background-color: #00ffcc;
+}
+
+.horizontal{
+	width: 2%;
+	background-color: #00ffdd;
+}
+
+.resizer-right.vertical{
+	width: 2%;
+	background-color: #00ffdd;
+}
+
