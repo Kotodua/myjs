@@ -1,0 +1,40 @@
+{
+	"tcName": "create new user",
+	"tcRunName": "create new user test run",
+	"tcRunDate": "",
+	"tcRunStatus": "",
+	"tcRunTime": "sec.",
+	"environment": {
+		"coreVersion": "",
+		"bondServerVersion": "",
+		"sputnikCoreClientVerdion": "",
+		"idVerdion": "",
+		"coreServerURL": "",		
+	},
+	"steps": [
+		{
+			"stepId": "id",
+			"stepName": "",
+			"stepAction": "",
+			"stepExpectedResult": "",
+			"stepActualResult": "",
+			"stepRunStatus": ""
+		},
+		{
+			"stepId": "id",
+			"stepName": "",
+			"stepAction": "",
+			"stepExpectedResult": "",
+			"stepActualResult": "",
+			"stepRunStatus": ""
+		},
+		{
+			"stepId": "id",
+			"stepName": "",
+			"stepAction": "",
+			"stepExpectedResult": "",
+			"stepActualResult": "",
+			"stepRunStatus": ""
+		},
+	] 
+}
