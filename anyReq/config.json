@@ -1,0 +1,17 @@
+{
+	"core": {
+		"coreURL": "http://core-dev.tereadek.com",
+		"coreServerVersion": "1.25.0"
+	},
+	"id": {
+		"idURL": "https://id-dev.tereadek.com",
+		"idServerVersion": "2.15.0"
+	},
+	"devices": {
+		"Cube": {
+			"deviceSeries":  255,
+			"deviceModel":   "Cube2",
+			"deviceType": "encoder"
+		}
+	}
+}

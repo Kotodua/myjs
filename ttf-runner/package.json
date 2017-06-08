@@ -1,18 +1,1 @@
-{
-  "name": "ttf-runner",
-  "version": "1.0.0",
-  "description": "",
-  "main": "common.js",
-  "dependencies": {
-    "chai": "^3.5.0",
-    "mongoose": "^4.10.2"
-  },
-  "devDependencies": {
-    "mocha": "^3.4.1"
-  },
-  "scripts": {
-    "test": "./node_modules/.bin/mocha --reporter spec"
-  },
-  "author": "",
-  "license": "ISC"
-}
+
